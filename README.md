@@ -24,7 +24,7 @@ FAQ is distributed by an [MIT license](https://github.com/pmarsceill/just-the-do
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [GitHub repo](https://github.com/sinotec2/Focus-on-Air-Quality/discussions/).
 
-#### The contributor of FAQ
+#### The contributor of this site 
 
 <ul class="list-style-none">
 for contributor in site.github.contributors 
