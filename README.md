@@ -1,8 +1,6 @@
 
 
-# Focus on Air Quality
-
-這裡分享有關空氣品質及模式的分析工具與經驗
+# static websites by SINOTEC2
 
 
 [What's New](https://sinotec2.github.io/Focus-on-Air-Quality/PlumeModels/REnTG_pathways/gen_inp/)、[Leave messages on GitHub](https://github.com/sinotec2/Focus-on-Air-Quality/discussions/)
@@ -13,7 +11,6 @@
 
 ## About the project
 
-FAQ is &copy; 2021-now by [sinotec2](http://github.com/sinotec2/).
 
 ### License
 
