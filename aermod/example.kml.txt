@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark><ExtendedData><Data name="name"><value>b1 40</value></Data></ExtendedData>
+	<Polygon><outerBoundaryIs><LinearRing>
+		<coordinates>
+			120.19663095490615,22.857488325541038 120.19679403318152,22.85681209804539 
+			120.19768667247264,22.85701773485837 120.19751071962675,22.857682097730326 
+			120.19663095490615,22.857488325541038
+		</coordinates>
+	</LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><ExtendedData><Data name="name"><value>b2 40</value></Data></ExtendedData>
+	<Polygon><outerBoundaryIs><LinearRing>
+		<coordinates>
+			120.19689703007319,22.856535278808 120.19707298291907,22.855874864967262 
+			120.19794845600703,22.85608050319815 120.197781086099,22.85674487061339 
+			120.19689703007319,22.856535278808
+		</coordinates></LinearRing></outerBoundaryIs>
+	</Polygon>
+</Placemark>
+<Placemark><ExtendedData><Data name="name"><value>b3 40</value></Data></ExtendedData>
+	<Polygon><outerBoundaryIs><LinearRing><coordinates>120.19745922101721,22.855811591521636 
+		120.19758796704993,22.855301449110527 120.19830465349516,22.85547149649191 
+		120.1981415750561,22.855965820333473 120.19745922101721,22.855811591521636</coordinates></LinearRing></outerBoundaryIs>
+	</Polygon>
+</Placemark>
+<Placemark><ExtendedData><Data name="name"><value>b4 40</value></Data></ExtendedData>
+	<Polygon><outerBoundaryIs><LinearRing><coordinates>120.19779825230219,22.85494948915392 
+		120.19794416453807,22.854431434225983 120.198652267718,22.854609392268987 
+		120.19849348074787,22.855107673489712 120.19779825230219,22.85494948915392</coordinates></LinearRing></outerBoundaryIs>
+	</Polygon>
+</Placemark>
+<Placemark><ExtendedData><Data name="name"><value>hs1 250</value></Data></ExtendedData>
+	<Point><coordinates>
+		120.19625544548036,22.85676958667696</coordinates></Point></Placemark>
+<Placemark><ExtendedData><Data name="name"><value>hs2 250</value></Data></ExtendedData>
+	<Point><coordinates>
+		120.19671678543092,22.854960364468663</coordinates></Point></Placemark>
+<Placemark><ExtendedData><Data name="name"><value>c 150</value></Data></ExtendedData>
+	<Point><coordinates>
+		120.19549369812013,22.858133902251407</coordinates></Point></Placemark>
+</Document>
+</kml>
