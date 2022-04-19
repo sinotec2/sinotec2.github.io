@@ -3,14 +3,15 @@
 # static websites by SINOTEC2
 
 
-[What's New](https://sinotec2.github.io/aermods)、[Leave messages on GitHub](https://github.com/sinotec2/Focus-on-Air-Quality/discussions/)
+[What's New](https://sinotec2.github.io/aermod)、[Leave messages on GitHub](https://github.com/sinotec2/Focus-on-Air-Quality/discussions/)
 
 ---
 
 ## What's New
 - [calpuff forecasting](https://sinotec2.github.io/cpuff_forecast/) by CWB WRF_3Km and Electricity Operation Rate posted in OpenData.gov
 - [Progression](https://sinotec2.github.io/cmaqprog/) of CMAQ executed at Sinotech-Eng Server
-- [Remote Executions](https://sinotec2.github.io/aermods) of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
+- [Remote Executions](https://sinotec2.github.io/aermod) of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
+- [Trajectories Forecasting](https://sinotec2.github.io/traj) 
 
 ## About the project
 
