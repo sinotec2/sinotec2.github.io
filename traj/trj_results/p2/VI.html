@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>leaflet-map-csv</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!-- Load Leaflet code library - see updates at http://leafletjs.com/download.html -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <!-- Position the map with Cascading Style Sheet (CSS) -->
+  <style>
+    body { margin:0; padding:0; }
+    #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+  </style>
+<link rel="stylesheet" href="../src/leaflet-geojson-selector.css" />
+<link rel="stylesheet" href="../src/style.css" />
+<script src="../src/moment.min.js"></script>
+<script src="../src/jquery.min.js"></script>
+<script src="../src/leaflet-src.js"></script>
+<script src="../src/leaflet-geojson-selector.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+  <!-- Insert HTML division tag to layout the map -->
+  <div id="map"></div>
+
+  <!-- Insert Javascript (.js) code to create the map -->
+  <script>
+
+  // Set up initial map center and zoom level
+  var map = L.map('map', {
+    center: [23.6, 121.0], // EDIT latitude, longitude to re-center map
+    zoom: 8,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    scrollWheelZoom: true,
+    tap: false
+  });
+
+  /* Control panel to display map layers */
+  var controlLayers = L.control.layers( null, null, {
+    position: "bottomright",
+    collapsed: false
+  }).addTo(map);
+  var scl = L.control.scale().addTo(map);
+
+  var darkM = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+attribution: '&copy;<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+subdomains: 'abcd',
+  }).addTo(map); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
+  controlLayers.addBaseLayer(darkM, 'Carto Dark');
+ 
+ // display Carto basemap tiles with light features and labels
+  var light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+  }); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
+  controlLayers.addBaseLayer(light, 'Carto Light');
+
+  /* Stamen colored terrain basemap tiles with labels */
+  var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+    attribution: 'Map data by <a href="http://openstreetmap.org">OpenStreetMap</a>.'
+  }); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
+  controlLayers.addBaseLayer(terrain, 'Stamen Terrain');
+
+  // see more basemap options at https://leaflet-extras.github.io/leaflet-providers/preview/
+
+  // Read markers data from data.csv
+$.getJSON('today_marksV.geojson', function(json) {
+    geoLayer = L.geoJson(json, {
+    style: function(feature) {
+      var mag = feature.properties.VI;
+      if (mag >= 400) { return { color: "green" }; }
+      else if (mag >= 300) { return { color: "yellow" }; } 
+      else if (mag >= 200) { return { color: "orange" }; } 
+      else { return { color: "red" };}},
+    onEachFeature: function(feature,layer) {
+        var popupText = "<b>VI=</b> " + feature.properties.VI + "m2/s @" + feature.properties.date;
+            layer.bindPopup(popupText, {closeButton: false, offset: L.point(0, -20)});
+            layer.on('mouseover', function() { layer.openPopup(); }); 
+            layer.on('mouseout', function() { layer.closePopup(); });    
+        },  
+    pointToLayer: function (feature, latlng) {
+    return L.circleMarker(latlng, {
+        radius: Math.round(Math.sqrt(feature.properties.VI)+6)/3,    
+    opacity: 1,
+    style: function(feature) {
+      var mag = feature.properties.VI;
+      if (mag >= 400) { return { color: "red" }; }
+      else if (mag >= 300) { return { color: "orange" }; } 
+      else if (mag >= 200) { return { color: "yellow" }; } 
+      else { return { color: "green" };}},
+        }); 
+      },  
+}).addTo(map);
+    }); 
+  $.get('today_marks.csv', function(csvString) {
+
+    // Use PapaParse to convert string to array of objects
+    var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
+
+    // For each row in data, create a marker and add it to the map
+    // For each row, columns `Latitude`, `Longitude`, and `Title` are required
+    let seg = [ ];
+    for (var i in data) {if (data[i].Title == 0 ){seg.push(i)}};
+    let points = [ ];
+    for (var i in data) {
+      var row = data[i];
+      if (i<data.length - 1){
+        points.push([row.Latitude, row.Longitude]);
+      }
+    };
+    for (i=0;i<=seg.length-1;i++) {
+      let start = seg[i];
+      let end = data.length-1;
+      if (i<seg.length-1){end=seg[i+1];}
+      let newPnt = points.slice(start, end);
+      var polyline = L.polyline(newPnt).addTo(map);
+      console.log(i,start,end);
+    };
+
+  });
+  const today=new Date();
+  const stopday = new Date();
+  stopday.setDate(today.getDate() + 2);
+  map.attributionControl.setPrefix(
+   "Back Traj stop at " + stopday.getFullYear()+ "/" + (stopday.getMonth()+1) + "/" + stopday.getDate() + "/12:00" 
+  );
+
+  </script>
+</body>
+</html>
+
