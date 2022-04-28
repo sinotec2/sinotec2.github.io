@@ -43,7 +43,7 @@ $('.changer').change(function () {
       document.getElementById("MyFrame").src=newVIs;
      }
     </script>
-<style> #SIDE { width:600px; position:absolute; top:10px; right:100px;  } </style>
+<style> #SIDE { width:600px; position:absolute; top:80px; right:100px;  } </style>
 <style> #SID2 { width:500px; position:absolute; top:420px; right:800px;  } </style>
 </head>
 <body>
@@ -65,11 +65,9 @@ $('.changer').change(function () {
     <button onClick="newSrc();">View Trajectories</button>
     <button onClick="newVIs();">View VI</button>
   </fieldset>
-<p>風場數據：中央氣象局WRF_3KM預報</p>
-<p>內插網格：臺灣本島範圍、解析度1公里 </p>
 <p>軌跡點時間間距：15秒(曲線)、1小時(氣球)</p>
 <p>通風指數(VI)= 風速  x  混合層高度 (m**2/s)</p>
-<p>風速=U10 and V10 from WRF_3Km</p>
+<p>風速=U10 and V10, <a href="https://sinotec2.github.io/Focus-on-Air-Quality/wind_models/cwbWRF_3Km/get_M-A0064/" target="_block">中央氣象局WRF_3Km預報</a></p>
 <p>混合層高度=以預報位溫及Holzworth Method求得</p>
 <p class="lead"> </p>
       </div>
