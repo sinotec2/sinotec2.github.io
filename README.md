@@ -8,10 +8,10 @@
 ---
 
 ## What's New
-- [calpuff forecasting](https://sinotec2.github.io/cpuff_forecast/) by CWB WRF_3Km and Electricity Operation Rate posted in OpenData.gov
+- [臺灣未來3天火力機組空品影響預報](https://sinotec2.github.io/cpuff_forecast/)：calpuff forecasting by CWB WRF_3Km and Electricity Operation Rate posted in OpenData.gov
 - [Progression](https://sinotec2.github.io/cmaqprog/) of CMAQ executed at Sinotech-Eng Server
-- [Remote Executions](https://sinotec2.github.io/aermod) of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
-- [Trajectories Forecasting](https://sinotec2.github.io/traj) 
+- [ISC/AERMODs 遠端執行系統教學網站](https://sinotec2.github.io/aermod)：Remote executions of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
+- [臺灣地區高解析度軌跡近5日預報](https://sinotec2.github.io/traj) 
 
 ## About the project
 
