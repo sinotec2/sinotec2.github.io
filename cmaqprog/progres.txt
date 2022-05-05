@@ -1,1 +1,1 @@
-/nas2/cmaqruns/2019force/CTM_LOG_000.v532_intel_Taiwan_20181228 Processing Day/Time [YYYYDDD:HHMMSS]: 2018362:075640
+/nas2/cmaqruns/2019force/CTM_LOG_000.v532_intel_Taiwan_20181228 Processing Day/Time [YYYYDDD:HHMMSS]: 2018362:100000
