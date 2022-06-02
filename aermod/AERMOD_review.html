@@ -5,6 +5,16 @@
 <link rel="stylesheet" type="text/css" href="jQuery-Plugin-For-Sortable-Searchable-Tables-Tablesort/css/tablesort.css">
 <link rel="stylesheet" type="text/css" href="jQuery-Plugin-For-Sortable-Searchable-Tables-Tablesort/css/styles.css">
 <title>AERMOD ref</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script type="text/javascript" src="jQuery-Plugin-For-Sortable-Searchable-Tables-Tablesort/tablesort.js"></script>
+<script type="text/javascript">
+            // For Demo Purposes
+            $(function () {
+                $('table.table-sort').tablesort();
+                hljs.initHighlightingOnLoad(); // Syntax Hilighting
+            });
+        </script>
 </head>
 <body>
 <table class="table-sort table-sort-search table-sort-show-search-count">
@@ -632,15 +642,5 @@
 <td>環境工程學系所</td>
 </tr>
 </tbody></table>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-<script type="text/javascript" src="jQuery-Plugin-For-Sortable-Searchable-Tables-Tablesort/tablesort.js"></script>
-<script type="text/javascript">
-            // For Demo Purposes
-            $(function () {
-                $('table.table-sort').tablesort();
-                hljs.initHighlightingOnLoad(); // Syntax Hilighting
-            });
-        </script>
 </body>
 </html>
