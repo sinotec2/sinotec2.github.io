@@ -17,7 +17,7 @@
   - [臺灣中部地區東西向垂直截面之位溫動態分布](https://sinotec2.github.io/THE_CrossSect)
 - 空品模式學位論文整理表格
   - [aermod](https://sinotec2.github.io/aermod/AERMOD_review.html)
-  - [trajectory models](https://sinotec2.github.io/aermod/review.html)
+  - [trajectory models](https://sinotec2.github.io/aermod/traj_review.html)
 
 ## About the project
 
