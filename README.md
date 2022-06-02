@@ -14,6 +14,10 @@
 - 2019/1/29 ~ 31 東風案例環保署建議公版模式模擬結果
   - [地面2D模擬結果動態分布](https://sinotec2.github.io/RecModResults)
   - [臺灣中部地區東西向垂直截面之PM2.5動態分布](https://sinotec2.github.io/PM2.5CrossSect)
+  - [臺灣中部地區東西向垂直截面之位溫動態分布](https://sinotec2.github.io/THE_CrossSect)
+- 空品模式學位論文整理表格
+  - [aermod](https://sinotec2.github.io/aermod/AERMOD_review.html)
+  - [trajectory models](https://sinotec2.github.io/aermod/traj_review.html)
 
 ## About the project
 
