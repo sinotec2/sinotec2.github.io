@@ -11,7 +11,8 @@
 - [Progression](https://sinotec2.github.io/cmaqprog/) of CMAQ executed at Sinotech-Eng Server
 - [ISC/AERMODs 遠端執行系統教學網站](https://sinotec2.github.io/aermod)：Remote executions of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
 - [臺灣地區高解析度軌跡近5日預報](https://sinotec2.github.io/traj) 
-- 2018/3/31~4/48 [東亞地區解析度15Km之CMAQ沙塵暴模擬分析](https://sinotec2.github.io/cmaqprog/NCL_China_WBDust)
+- 2018/3/31~4/8 東亞地區解析度15Km之沙塵暴模擬分析
+  - [CMAQ WBD vs WRF_chem](https://sinotec2.github.io/cmaqprog/NCL_China_WBDust)
 - 2019/1/29 ~ 31 東風案例環保署建議公版模式模擬結果
   - [地面2D模擬結果動態分布](https://sinotec2.github.io/RecModResults)
   - [臺灣中部地區東西向垂直截面之PM2.5動態分布](https://sinotec2.github.io/PM2.5CrossSect)
