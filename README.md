@@ -7,7 +7,7 @@
 ---
 
 ## What's New
-- [earth套件讀取CWB_WRF數據-current wind](http://114.32.164.198/#current/wind/surface/level/orthographic=-238.42,24.05,4380)
+- [earth套件讀取CWB_WRF3Km數據-current wind](http://114.32.164.198/#current/wind/surface/level/orthographic=-238.42,24.05,4380)
 - [臺灣未來3天火力機組空品影響預報](https://sinotec2.github.io/cpuff_forecast/)：calpuff forecasting by CWB WRF_3Km and Electricity Operation Rate posted in OpenData.gov
 - [Progression](https://sinotec2.github.io/cmaqprog/) of CMAQ executed at Sinotech-Eng Server
 - [ISC/AERMODs 遠端執行系統教學網站](https://sinotec2.github.io/aermod)：Remote executions of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
