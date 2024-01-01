@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TRAJ Selectmenu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/smoothness/jquery-ui.css">
+  <style>
+    fieldset {
+      border: 0;
+    }
+    label {
+      display: block;
+      margin: 30px 0 0 0;
+    }
+    .overflow {
+      height: 200px;
+    }
+  </style>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+$('.changer').change(function () {
+    $(this).next().attr('src', this.value);
+});
+  </script>
+<script type="text/javascript">
+     function newSrc() {
+      var e = document.getElementById("MySelectMenu");
+      var newSrc = e.options[e.selectedIndex].value;
+      document.getElementById("MyFrame").src=newSrc;
+     }
+    </script>
+<script type="text/javascript">
+     function newVIs() {
+      var e = document.getElementById("MySelectMenu");
+      var newVIs = e.options[e.selectedIndex].value + "/VI.html";
+      document.getElementById("MyFrame").src=newVIs;
+     }
+    </script>
+<style> #SIDE { width:600px; position:absolute; top:20px; right:100px;  } </style>
+<style> #SID2 { width:500px; position:absolute; top:350px; right:750px;  } </style>
+</head>
+<body>
+
+    <header class="subhead" id="overview">
+      <div class="container">
+<h1>
+臺灣地區高解析度軌跡近5日預報
+</h1>
+  <fieldset>
+    <label for="days">日期選擇</label>
+    <select class="changer" name="days" id="MySelectMenu">
+      <option value="/traj/trj_results/m2">前日</option>
+      <option value="/traj/trj_results/m1">昨日</option>
+      <option value="/traj/trj_results/00" selected="selected">今日</option>
+      <option value="/traj/trj_results/p1">明日</option>
+      <option value="/traj/trj_results/p2">後日</option>
+    </select>
+    <button onClick="newSrc();">View Trajectories</button>
+    <button onClick="newVIs();">View VI</button>
+  </fieldset>
+<p>軌跡點時間間距：15秒(曲線)、1小時(氣球)</p>
+<p>通風指數(VI)= 風速  x  混合層高度 (m**2/s)</p>
+<p>風速=U10 and V10, <a href="https://sinotec2.github.io/Focus-on-Air-Quality/wind_models/cwbWRF_3Km/" target="_block">中央氣象局WRF_3Km預報</a></p>
+<p>混合層高度=以預報位溫及Holzworth Method求得</p>
+<p>臺灣附近氣流線(<a href="https://www.windy.com/?25.715,123.442,5" target="_block">windy.com</a>)</p>
+<p><a href="http://125.229.149.182/traj2.html" target="_block">空品測站正/反軌跡分析系統</a></p>
+<p class="lead"> </p>
+      </div>
+    </header>
+
+    <div id="SIDE">
+     <iframe width="80%" height="680px" frameborder="0" id="MyFrame"
+     allowfullscreen src= "/traj/trj_results/00" ></iframe><p>
+     enlarge:<a href="/traj/trj_results/m2" target="_block"> 
+前日
+</a>/<a href="/traj/trj_results/m1" target="_block"> 
+昨日
+</a>/<a href="/traj/trj_results/00" target="_block"> 
+今日
+</a>/<a href="/traj/trj_results/p1" target="_block"> 
+明日
+</a>/<a href="/traj/trj_results/p2" target="_block"> 
+後日
+</a>
+</a></p>
+    </div>
+    <div id="SID2">
+     <iframe width="400" height="300" src="https://embed.windy.com/embed2.html?lat=23.435&lon=120.788&detailLat=25.050&detailLon=121.532&width=300&height=200&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+    </div>
+
+<div class="container">
+<div class="col-md-4">
+
+ 
+</div>
+</div>
+ 
+	
+</body>
+</html>
