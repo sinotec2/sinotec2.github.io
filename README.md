@@ -8,13 +8,16 @@
 
 ## What's New
 
-- [東亞～臺灣未來10天空品預報](https://sinotec2.github.io/cmaq_forecast/)：CMAQ forecasting by GFS and WRF_3Km
-- [東亞範圍近日WRF及CMAQ預報](http://125.229.149.182:8084)
-- [earth套件讀取CWB_WRF3Km數據-current wind](http://125.229.149.182:8083)
-- [臺灣未來3天重要點源空品影響預報](https://sinotec2.github.io/cpuff_forecast/)：calpuff forecasting by CWB WRF_3Km and Electricity Operation Rate posted in OpenData.gov
-- [Progression](https://sinotec2.github.io/cmaqprog/) of CMAQ executed at Sinotech-Eng Server
-- [ISC/AERMODs 遠端執行系統教學網站](https://sinotec2.github.io/aermod)：Remote executions of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
+- 臺灣(3K) ~ 東亞(45K) 未來10天空品預報
+  - [mac time-bar version (update 9:00am every workday) ](http://125.229.149.182/time-bar/)
+  - [github gif version(deprecated)](https://sinotec2.github.io/cmaq_forecast/)：CMAQ forecasting by GFS and WRF_3Km
 - [臺灣地區高解析度軌跡近5日預報](https://sinotec2.github.io/traj) 
+- demo systems
+  - [東亞範圍近日WRF及CMAQ預報](http://125.229.149.182:8084)
+  - [earth套件讀取CWB_WRF3Km數據-current wind](http://125.229.149.182:8083)
+  - [臺灣未來3天重要點源空品影響預報](https://sinotec2.github.io/cpuff_forecast/)：calpuff forecasting by CWB WRF_3Km and Electricity Operation Rate posted in OpenData.gov
+  - [Progression](https://sinotec2.github.io/cmaqprog/) of CMAQ executed at Sinotech-Eng Server
+- [ISC/AERMODs 遠端執行系統教學網站](https://sinotec2.github.io/aermod)：Remote executions of AERMOD/ISCST3/CALINE3/CALPUFF7 at iMac Server
 - 2018/3/31~4/8 東亞地區解析度15Km之沙塵暴模擬分析
   - [CMAQ WBD vs WRF_chem](https://sinotec2.github.io/cmaqprog/NCL_China_WBDust)
 - 2019/1/29 ~ 31 東風案例環保署建議公版模式模擬結果
