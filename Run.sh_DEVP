@@ -16,9 +16,9 @@ ln -s ~/MyPrograms/wrf-python/m3nc2gif/wrfout_d04 .
 rm -f $gtd/cpuff_forecast/example_gifs/PMF.gif
 cp PM10.gif $gtd/cpuff_forecast/example_gifs/PMF.gif
 
-ln -s /nas1/Data/cwb/WRF_3Km/$yr/$rundate/M-A0064-084.grb2 .
-~/bin/grbuv10_nc.py M-A0064-084.grb2
-cp wrf_gsn.png $gtd/cpuff_forecast/example_gifs/wrf_gsn.png
+#ln -s /nas1/Data/cwb/WRF_3Km/$yr/$rundate/M-A0064-084.grb2 .
+#~/bin/grbuv10_nc.py M-A0064-084.grb2
+#cp wrf_gsn.png $gtd/cpuff_forecast/example_gifs/wrf_gsn.png
 
 cd $gtd
 $GIT pull
