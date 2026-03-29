@@ -51,3 +51,7 @@ for contributor in site.github.contributors
   </li>
 
 </ul>
+
+### Privacy
+
+See here [privacy](https://sinotec2.github.io/privacy.html).
