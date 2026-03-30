@@ -51,3 +51,11 @@ for contributor in site.github.contributors
   </li>
 
 </ul>
+
+### Privacy
+
+See here [privacy](https://sinotec2.github.io/privacy.html).
+
+### Contact
+
+Feel free to contact me via [sinotec2@gmail.com]()
